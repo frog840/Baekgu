@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹사이트 제목</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>메인 페이지</title>
+    <style>
+        body {
+            background-color: #d9f99d; /* 연두색 */
+            font-family: Arial, sans-serif; /* 깔끔한 폰트 */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        .container a {
+            display: block;
+            margin: 20px;
+            font-size: 24px;
+            color: #000; /* 무채색 */
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="button-container">
-            <button class="menu-button" id="comics">만화</button>
-            <button class="menu-button" id="illustrations">일러스트</button>
-            <button class="menu-button" id="others">그외</button>
-        </div>
+        <a href="404.html">만화</a>
+        <a href="404.html">일러스트</a>
+        <a href="404.html">그외</a>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
