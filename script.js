@@ -1,12 +1,12 @@
-// 버튼 클릭 시 "아직 없음!" 메시지 표시
+// 버튼 클릭 시 새로운 페이지로 이동하여 "아직 없음!" 메시지를 표시
 document.getElementById('comics').addEventListener('click', function() {
-    document.getElementById('message').innerText = '아직 없음!';
+    window.location.href = 'message.html';
 });
 
 document.getElementById('illustrations').addEventListener('click', function() {
-    document.getElementById('message').innerText = '아직 없음!';
+    window.location.href = 'message.html';
 });
 
 document.getElementById('others').addEventListener('click', function() {
-    document.getElementById('message').innerText = '아직 없음!';
+    window.location.href = 'message.html';
 });
