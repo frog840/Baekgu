@@ -41,10 +41,3 @@ body {
 .menu-button:hover {
     background-color: #45a049; /* 버튼 호버 색상 */
 }
-
-/* 메시지 스타일 설정 */
-.message {
-    font-size: 24px;
-    color: #ff0000; /* 빨간색 텍스트 */
-    margin-top: 20px;
-}
