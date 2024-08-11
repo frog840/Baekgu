@@ -1,33 +1,12 @@
-function showSection(section) {
-    // 모든 섹션 숨기기
-    document.querySelectorAll('main > div').forEach(div => div.style.display = 'none');
+// 버튼 클릭 시 "아직 없음!" 메시지 표시
+document.getElementById('comics').addEventListener('click', function() {
+    document.getElementById('message').innerText = '아직 없음!';
+});
 
-    // 선택된 섹션 보이기
-    document.querySelector(`.${section}`).style.display = 'block';
-}
+document.getElementById('illustrations').addEventListener('click', function() {
+    document.getElementById('message').innerText = '아직 없음!';
+});
 
-// 예시 데이터 (추후 서버나 데이터베이스로 대체 가능)
-const comicsData = [
-    { title: 'Comic 1', cover: 'cover1.jpg', content: 'comic1.html' },
-    { title: 'Comic 2', cover: 'cover2.jpg', content: 'comic2.html' }
-];
-
-function loadComics() {
-    const comicsContainer = document.querySelector('.comics');
-    comicsData.forEach(comic => {
-        const comicItem = document.createElement('div');
-        comicItem.className = 'comic-item';
-        comicItem.innerHTML = `
-            <h2>${comic.title}</h2>
-            <img src="${comic.cover}" alt="${comic.title}">
-            <a href="${comic.content}" target="_blank">읽기</a>
-        `;
-        comicsContainer.appendChild(comicItem);
-    });
-}
-
-// 페이지 로드 시 만화 로드
-document.addEventListener('DOMContentLoaded', () => {
-    loadComics();
-    showSection('comics'); // 초기 섹션으로 만화 표시
+document.getElementById('others').addEventListener('click', function() {
+    document.getElementById('message').innerText = '아직 없음!';
 });
