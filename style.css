@@ -6,15 +6,24 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* 버튼 스타일 설정 */
+/* 전체 컨테이너 스타일 */
 .container {
     display: flex;
-    flex-direction: column; /* 버튼을 수직으로 정렬 */
-    align-items: center; /* 버튼을 수평 중앙 정렬 */
-    justify-content: center; /* 버튼을 수직 중앙 정렬 */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh; /* 화면 전체 높이 사용 */
 }
 
+/* 버튼 컨테이너 스타일 */
+.button-container {
+    display: flex;
+    flex-direction: column; /* 버튼을 수직으로 정렬 */
+    align-items: center; /* 버튼을 수평 중앙 정렬 */
+    gap: 10px; /* 버튼 간의 간격 */
+}
+
+/* 버튼 스타일 설정 */
 .menu-button {
     background-color: #4caf50; /* 버튼 색상 */
     border: none;
@@ -24,7 +33,6 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 10px;
     cursor: pointer;
     border-radius: 4px;
 }
