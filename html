@@ -8,13 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <button class="menu-button" id="comics">만화</button>
-        <button class="menu-button" id="illustrations">일러스트</button>
-        <button class="menu-button" id="others">그외</button>
+        <div class="button-container">
+            <button class="menu-button" id="comics">만화</button>
+            <button class="menu-button" id="illustrations">일러스트</button>
+            <button class="menu-button" id="others">그외</button>
+        </div>
         <div id="message" class="message"></div> <!-- 메시지를 표시할 요소 -->
     </div>
 
     <script>
+        // 버튼 클릭 시 "아직 없음!" 메시지 표시
         document.getElementById('comics').addEventListener('click', function() {
             document.getElementById('message').innerText = '아직 없음!';
         });
