@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Creative Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>웹사이트 제목</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <button onclick="showSection('comics')">만화</button>
-            <button onclick="showSection('illustrations')">일러스트</button>
-            <button onclick="showSection('others')">그 외</button>
-        </nav>
-    </header>
-    <main id="content">
-        <!-- Sections will be injected here by JavaScript -->
-    </main>
+    <div class="container">
+        <div class="button-container">
+            <button class="menu-button" id="comics">만화</button>
+            <button class="menu-button" id="illustrations">일러스트</button>
+            <button class="menu-button" id="others">그외</button>
+        </div>
+        <div id="message" class="message"></div> <!-- 메시지를 표시할 요소 -->
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
