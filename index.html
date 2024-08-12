@@ -8,21 +8,37 @@
         body {
             background-color: #d9f99d; /* 연두색 배경 */
             font-family: Arial, sans-serif; /* 깔끔한 폰트 */
-            text-align: center;
             margin: 0;
             padding: 0;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 2em;
+        }
+        .main-photo {
+            margin-top: 20px;
+        }
+        .main-photo img {
+            max-width: 100%; /* 화면 너비에 맞추기 */
+            height: auto;
+            border: 5px solid #fff; /* 흰색 테두리 추가 */
+            border-radius: 10px; /* 모서리 둥글게 */
         }
         .menu {
-            margin: 20px;
+            display: flex;
+            justify-content: center; /* 중앙 정렬 */
+            margin-top: 20px;
+            gap: 20px; /* 버튼 간격 */
         }
         .menu a {
             display: block;
-            padding: 10px;
-            margin: 10px;
+            padding: 10px 20px;
             background-color: #fff;
             color: #000;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 18px;
         }
         .menu a:hover {
             background-color: #f0f0f0;
@@ -30,7 +46,10 @@
     </style>
 </head>
 <body>
-    <h1>메인 페이지</h1>
+    <h1>웰컴</h1>
+    <div class="main-photo">
+        <img src="images/main-photo.jpg" alt="메인 사진">
+    </div>
     <div class="menu">
         <a href="illustration.html">일러스트</a>
         <a href="404.html">만화</a>
